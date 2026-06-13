@@ -516,16 +516,6 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
   </div>
   <div id="transContent" style="padding:0 24px 60px"></div>
 </div>
-<div style="max-width:960px;margin:40px auto 0;padding:0 40px">
-  <div style="background:linear-gradient(135deg,rgba(37,99,235,0.04),rgba(124,58,237,0.04));border:1px solid rgba(37,99,235,0.15);border-radius:14px;padding:22px 28px;display:flex;align-items:center;gap:20px;flex-wrap:wrap">
-    <div style="font-size:22px">&#127919;</div>
-    <div style="flex:1;min-width:280px">
-      <div style="font-size:15px;font-weight:700;color:var(--tx);margin-bottom:6px" id="pilotTitle"></div>
-      <div style="font-size:10px;color:#1a1a2e;line-height:1.6" id="pilotDesc"></div>
-    </div>
-    <div style="font-family:'JetBrains Mono',monospace;font-size:8px;color:var(--bl);background:rgba(37,99,235,0.06);padding:6px 12px;border-radius:8px;white-space:nowrap">OST &middot; INNOSUISSE &middot; LELY ASTRONAUT</div>
-  </div>
-</div>
 <div style="margin-top:40px;border-top:2px solid #cfc7ba;background:linear-gradient(180deg,#e4dfd5,#ddd8cd)">
   <div style="max-width:960px;margin:0 auto;padding:48px 40px 32px">
     <div style="display:grid;grid-template-columns:1fr auto;gap:32px;align-items:start;margin-bottom:36px;position:relative">
@@ -1440,11 +1430,6 @@ function renderStatic(){
     if(heroStrip){heroStrip.style.minHeight='auto';heroStrip.style.paddingBottom='60px';heroStrip.style.paddingTop='60px';heroStrip.style.display='block';heroStrip.style.gridTemplateColumns='';heroStrip.style.gap='';}
     if(heroCard){heroCard.style.maxWidth='700px';heroCard.style.order='';heroCard.style.position='';heroCard.style.zIndex='';}
   }
-  // Pilot banner language
-  document.getElementById('pilotTitle').textContent=de?'Pilot in Vorbereitung: Agroscope T\u00e4nikon (CH)':'Pilot in Preparation: Agroscope T\u00e4nikon (CH)';
-  document.getElementById('pilotDesc').innerHTML=de
-    ?'Unser Schwesterprojekt <b>ERL \u2014 Energy Readiness Layer</b> wird in Zusammenarbeit mit der <b>OST \u2014 Ostschweizer Fachhochschule</b> und <b>Innosuisse</b> am Forschungsstandort T\u00e4nikon auf einem Lely Astronaut validiert. MilkMind kann auf derselben Infrastruktur co-deployed werden \u2014 gleicher Standort, gleiche Hardware, gleiche Lely-Integration.'
-    :'Our sister project <b>ERL \u2014 Energy Readiness Layer</b> is being validated in collaboration with <b>OST \u2014 Eastern Switzerland University of Applied Sciences</b> and <b>Innosuisse</b> at the Agroscope research site T\u00e4nikon on a Lely Astronaut. MilkMind can be co-deployed on the same infrastructure \u2014 same site, same hardware, same Lely integration.';
   document.getElementById('engineHeroH').innerHTML=t('engine_h');
   document.getElementById('engineHeroSub').innerHTML=t('engine_sub');
   document.getElementById('dcpSectionTitle').innerHTML=t('dcp_s');
